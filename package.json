@@ -1,0 +1,27 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "Microservice Application focused on using AWS and Docker to send asynchronous emails using SNS or node-mailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dr4kk0nnys/microservice-email-sender.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dr4kk0nnys/microservice-email-sender/issues"
+  },
+  "homepage": "https://github.com/Dr4kk0nnys/microservice-email-sender#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "ts-jest": "^28.0.2",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.6.4"
+  }
+}
