@@ -5,13 +5,10 @@ const router = Router();
 
 router.post('/send-mail', async (req, res) => {
 
-    const { subject, body, to } = req.body;
+    await sendMail(req.body);
+    await saveLog({ ...req.body, date: new Date() });
 
-    await sendMail({ subject, body, to });
-
-    await saveLog({ subject, body, to, date: new Date() });
-
-    return res.status(200).json({ success: true });
+    return res.status(200).json(req.body);
 });
 
 export { router };
